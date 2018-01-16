@@ -76,11 +76,6 @@ if __name__ == '__main__':
     ak = dom.getElementsByTagName('baiduak')
     bak = str(ak[0].firstChild.data)
     ms = SqlCon.SqlCon(host=host, user=un, pwd=pd, db=dbt)
-    # reslist = ms.ExecQuery("  SELECT  LngLat  FROM dbo.CityMapDistance WHERE id IN (SELECT   min(ID) FROM dbo.CityMapDistance GROUP BY CityName )")
-    # for i in reslist:
-    #    s+=i[0]+'|'
-    # s=s[:-1]
-    print sqlstr
     sreslist = ms.ExecQuery(sqlstr)
     for m in sreslist:
         try:
@@ -96,49 +91,9 @@ if __name__ == '__main__':
             file_object = open('thefile.txt', 'a')
             file_object.write('\n')
             file_object.close()
-            # print 'str(Exception):\t', str(Exception)
-            # print 'str(e):\t\t', str(e)
-            # print 'repr(e):\t', repr(e)
-            # print 'e.message:\t', e.message
-
-            # if __name__ == '__main__':
-            #   reload(sys)
-            #   sys.setdefaultencoding('utf8')
-            #   ms = SqlCon.SqlCon(host="59.151.127.51",user="datawarehouse_r",pwd="sdLEK236XDwd6",db="YHBI_DW")
-            #   reslist = ms.ExecQuery("select distinct sCityName from dbo.CityMapDistance")
-            #   for i in reslist:
-            #       s=i[0]
-            #       try:
-            #           ll=getlnglat(str(i[0]))
-            #           #print 1
-            #           #print ll
-            #           newsql="update dbo.CityMapDistance set SLngLat='%s' where sCityName='%s'"%(ll,s);
-            #           #print newsql
-            #           ms.ExecNonQuery(newsql.encode('utf-8'))
-            #       except:
-            #           print i[0]
-            #           continue
 
 
 
 
 
 
-
-
-            # newsql="update dbo.CityMapDistance set name='%s' where id=1"%u'????'
-            # print newsql
-            # ms.ExecNonQuery(newsql.encode('utf-8'))
-            # file=open(r"C:\Users\MaMQ\hrFood.json",encoding='utf-8')
-            # data=[]
-            # newData=[]
-            # for line in file:
-            #    data.append(json.loads(line[:-2]))
-            # for dic in data:
-            #    address=dic['??ַ']
-            #    lat,lng=getlnglat(address)
-            #    dic['lat']=lat
-            #    dic['lng']=lng
-            #    newData.append(dic)
-            # for dic in newData:
-            #    __jsonDump("HuaiRou",dic)
