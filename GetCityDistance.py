@@ -18,8 +18,6 @@ def getDistance(slatlngs, dlatlng,ak):
     file_object.write(url + '\n')
     try:
         print -1
-
-        # headers = { 'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; utf-8; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'  }
         params = {'output': output, 'origins': slatlngs, 'destinations': dlatlng,
                   'ak': 'your ak!!!'}
         data = {}
@@ -27,9 +25,6 @@ def getDistance(slatlngs, dlatlng,ak):
         data['origins'] = slatlngs
         data['destinations'] = dlatlng
         data['ak'] = ak
-        # values = {'name' : 'Michael Foord',
-        #  'location' : 'Northampton',
-        #  'language' : 'Python' }
         uri = url + '?' + 'output=' + output + '&origins=' + slatlngs + '&destinations=' + dlatlng + '&ak=' + ak
         req = requests.get(uri)
         print req
