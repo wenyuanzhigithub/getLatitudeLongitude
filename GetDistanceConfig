@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+    <host>.</host>
+    <login username="sa" passwd='1qaz@WSX'>
+            </login>
+    <database>testdb</database>
+    <SQLSTR>SELECT  DISTINCT LngLat,SLngLat,ID FROM dbo.CityMapDistanceNew WHERE SLngLat IS NOT NULL and CityDistance is null</SQLSTR>
+    <SQLUpdate>update dbo.CityMapDistanceNew set CityDistance='%s' where ID='%s'</SQLUpdate>
+    <baiduak>SmrfzDZ39a762A0FcVXEaCjBPs2HPM11</baiduak>
+
+    <!--<database>YHBI_DW</database>-->
+    <!--<SQLSTR>"SELECT  [NewLocationKey],[NewLocationName] FROM [YHBI_DW].[dbo].[DimNewLocation]"</SQLSTR>-->
+    <!--<SQLUpdate>"update [YHBI_DW].[dbo].[DimNewLocation] set [LngLat]='%s' where [NewLocationKey] ='%s'"</SQLUpdate>-->
+     <!--<baiduak>BHPn8rBxKYDmyqhCT4T9GEfj6EKInPFZ</baiduak>-->
+
+
+</catalog>

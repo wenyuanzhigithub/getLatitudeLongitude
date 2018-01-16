@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+    <host>.</host>
+    <login username="sa" passwd='1qaz@WSX'>
+            </login>
+    <database>testdb</database>
+    <SQLSTR>SELECT  [NewLocationKey],[NewLocationName] FROM  [dbo].[DimNewLocation] where LngLat is null</SQLSTR>
+    <SQLUpdate>update  [dbo].[DimNewLocation] set [LngLat]='%s' where [NewLocationKey] ='%s'</SQLUpdate>
+
+    <!--<database>YHBI_DW</database>-->
+    <!--<SQLSTR>"SELECT  [NewLocationKey],[NewLocationName] FROM [YHBI_DW].[dbo].[DimNewLocation]"</SQLSTR>-->
+    <!--<SQLUpdate>"update [YHBI_DW].[dbo].[DimNewLocation] set [LngLat]='%s' where [NewLocationKey] ='%s'"</SQLUpdate>-->
+
+
+</catalog>
