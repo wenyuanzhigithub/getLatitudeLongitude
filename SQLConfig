@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <catalog>
-    <host>.</host>
+    <host>server</host>
     <login username="sa" passwd='??????'>
             </login>
     <database>testdb</database>
