@@ -3,7 +3,7 @@
     <host>.</host>
     <login username="sa" passwd='????'>
             </login>
-    <database>testdb</database>
+    <database>dbname</database>
     <SQLSTR>SELECT  DISTINCT LngLat,SLngLat,ID FROM dbo.CityMapDistanceNew WHERE SLngLat IS NOT NULL and CityDistance is null</SQLSTR>
     <SQLUpdate>update dbo.CityMapDistanceNew set CityDistance='%s' where ID='%s'</SQLUpdate>
     <baiduak>your ak</baiduak>
