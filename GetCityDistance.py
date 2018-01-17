@@ -29,7 +29,7 @@ def getDistance(slatlngs, dlatlng,ak):
         req = requests.get(uri)
         print req
 
-        # ?????û?????
+        # 
         temp = req.json()
         print temp
         dis = temp['result'][0]['distance']['value']
