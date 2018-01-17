@@ -33,6 +33,6 @@ class SqlCon:
             self.conn.commit()
             self.conn.close()
         except:
-            raise (NameError, "语句有问题1")
+            raise (NameError, "语句有问题")
 
 
