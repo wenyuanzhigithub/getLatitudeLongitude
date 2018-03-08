@@ -44,7 +44,6 @@ def getDistance(slatlngs, dlatlng,ak):
         print 'e.message:\t', e.message
         return 1
 
-
 # def __jsonDump(name,_json):
 #    with open(name + '.json','a') as outfile:
 #        json.dump(_json,outfile,ensure_ascii=False)
